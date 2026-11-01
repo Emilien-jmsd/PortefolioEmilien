@@ -1,0 +1,254 @@
+/* importation de la fonte JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+/* propriétées pour toutes les balises des pages */
+* {
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace, Verdana, Geneva, Tahoma, sans-serif;
+    color: #2b6cb0;
+}
+
+
+/* apparence des liens hypertextes */
+a {
+    /* Supprime le soulignement */
+    text-decoration: none;
+}
+
+a:hover {
+    /* Change la couleur au survol */
+    color: #1a365d;
+    /* Remet le soulignement au survol*/
+    text-decoration: underline;
+}
+
+
+/* apparence de l'en-tête des pages contenant le menu principal */
+header {
+    width: 100%;
+    min-height: 160px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    height: auto;
+    display: block;
+}
+
+.menu {
+    list-style: none;
+    min-height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+/* Organisation du conteneur au centre de la page d'accueil */
+
+/* Conteneur principal images et textes*/
+.conteneur-principal {
+    /* Référence pour le positionnement dans le conteneur principal */
+    position: relative;
+    width: 850px;
+    height: 600px;
+    /* border: 2px solid black; */
+    /* La valeur "auto" permet de centrer horizontalement le conteneur principal */
+    margin: 15px auto;
+}
+
+/* Style commun aux images */
+.conteneur-principal img {
+    /* Permet de superposer les images */
+    position: absolute;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Image d'un ordinateur */
+.image-ordinateur {
+    width: 250px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+/* Image d'Annonay' */
+.image-annonay {
+    width: 250px;
+    top: 20px;
+    left: 550px;
+    z-index: 1;
+}
+
+/* Image BTS SIO */
+.image-sio {
+    width: 500px;
+    top: 200px;
+    left: 100px;
+    z-index: 2;
+}
+
+/* Image Emilien */
+.image-emilien {
+    width: 150px;
+    top: 350px;
+    left: 60px;
+    z-index: 3;
+}
+
+/* Style commun et position des boîtes contenant du texte */
+.conteneur-principal p {
+    /* Permet de superposer les textes */
+    position: absolute;
+    width: 450px;
+    height: auto;
+}
+
+.nom {
+    top: 20px;
+    left: 300px;
+    font-size: x-large;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.bienvenue {
+    top: 480px;
+    left: 300px;
+    font-size: x-large;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.statut {
+    top: 80px;
+    left: 300px;
+    font-size: medium;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.etude {
+    top: 100px;
+    left: 300px;
+    font-size: medium;
+    font-weight: bold;
+    z-index: 3;
+}
+
+/* Organisation du formulaire */
+
+form {
+    margin: 50px;
+}
+
+fieldset {
+    margin: 25px;
+}
+
+/* Organisation des boîtes dans la page présentation */
+
+.super-conteneur {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 500px;
+    flex-wrap: wrap;
+}
+
+.conteneur-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.conteneur-presentation img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+.carte {
+    width: 450px;
+    min-height: 400px;
+    background-color: #eee;
+    padding: 20px 20px 0px 20px;
+    border: 2px solid #2b6cb0;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carte h2 {
+    text-align: center;
+}
+
+.carte-badge {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #2b6cb0;
+    color: #fff;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* apparence tableau */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid;
+    padding: 10px;
+    height: 20px;
+}
+
+/* apparence des titres dans la page compétence */
+.titre-competences {
+    width: 50%;
+    margin-top: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #2b6cb0;
+    color: #fff;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+/* apparence du pied de page */
+footer {
+    /* margin: 0px, 100px, 0px, 100px; */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* organisation de la page projets */
+
+.projets {
+    width: 50%;
+    border: 2px solid #2b6cb0;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+}

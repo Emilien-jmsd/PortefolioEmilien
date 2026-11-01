@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!-- en-tête de la Page -->
+    <header>
+        <img src="../Photos/EnTete03.jpg" alt="">
+        <h1>Formulaire</h1>
+        <!-- menu de navigation -->
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./presentation.html">Présentation</a></li>
+                <li><a href="./parcours.html">Parcours</a></li>
+                <li><a href="./competences.html">Compétences</a></li>
+                <li><a href="./projets.html">Projets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- contenu du formulaire -->
+
+    <form method="post" action="traitement .php">
+
+        <p>Pourriez-vous me donner votre avis et des conseils à propos de mon portfolio ?</p>
+
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+
+            <p>
+                <label for="titre">Titre</label> :
+                <select name="titre" id="titre">
+                    <option value="madame">Madame</option>
+                    <option value="monsieur">Monsieur</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="nom">votre nom</label> : <input type="text" name="nom" id="nom">
+            </p>
+
+
+            <p>
+                <label for="prenom">votre prénom</label> : <input type="text" name="prenom" id="prenom">
+            </p>
+            <p>
+                <label for="email">votre email</label> : <input type="email" size="30" name="email" id="email">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Avis et conseils</legend>
+
+            <p>
+                Que pensez-vous des informations pésentes dans mon portfolio : <br>
+                <input type="radio" name="info" value="insuffisantes" id="insuffisants"> <label
+                    for="insuffisantes">Insuffisantes</label> <br>
+                <input type="radio" name="info" value="satisfaisantes" id="satisfaisantes"> <label
+                    for="satisfaisantes">Satisfaisantes</label> <br>
+                <input type="radio" name="info" value="tropNombreuses" id="tropNombreuses"> <label
+                    for="tropNombreuses">Trop
+                    nombreuses</label> <br>
+            </p>
+
+            <p>
+                Attribuez une note entre 0 et 5 pour chacun des termes suivants qualifiant la présentation de mon
+                portfolio
+                : <br>
+                <label for="fluide">Fluide</label> <input type="range" name="fluide" id="fluide" min="0" max="5"> <br>
+                <label for="structuree">Structurée</label> <input type="range" name="structuree" id="structuree" min="0"
+                    max="5"> <br>
+                <label for="coherente">Cohérente</label> <input type="range" name="coherente" id="coherente" min="0"
+                    max="5"> <br>
+            </p>
+
+            <p>
+                <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon portfolio ?</label> <br>
+                <textarea name="ameliorer" id="ameliorer" rows="10" cols="80"></textarea>
+            </p>
+        </fieldset>
+
+        <p>Avec tous mes remerciements.</p>
+
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+
+    </form>
+</body>
+
+</html>
